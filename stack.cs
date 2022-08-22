@@ -1,3 +1,7 @@
+/*
+Create a stack of numbers, push, pop,peek,count, print before pop and after pop.
+Find the topmost element on the stack.
+*/
 using System.Collections;
 
     internal class Prob6
