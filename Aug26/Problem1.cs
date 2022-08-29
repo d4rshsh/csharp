@@ -1,4 +1,4 @@
-﻿using ArrayObjLibrary;
+using ArrayObjLibrary;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,36 +7,34 @@ using System.Threading.Tasks;
 
 namespace Aug26
 {
-    public class Problem1
+    public class Prob1
 
     {
         static void Main(string[] args)
         {
-            Students[] student = new Students[2];
+            Students[] s = new Students[2];
 
 
 
             for (int i = 0; i < student.Length; i++)
             {
-                student[i] = new Students();
-                Console.WriteLine("Enter RollNo");
-                student[i].RollNo = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter Student name");
-                student[i].StudentName = Console.ReadLine();
-                Console.WriteLine("Eneter Grade");
-                student[i].Grade = Convert.ToChar(Console.ReadLine());
-                Console.WriteLine("----------------------");
+                s[i] = new Students();
+                Console.WriteLine("Enter Roll Number:");
+                s[i].RollNo = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter Student's name:");
+                s[i].StudentName = Console.ReadLine();
+                Console.WriteLine("Enter Grade");
+                s[i].Grade = Convert.ToChar(Console.ReadLine());
             }
             Console.WriteLine("Student Details:");
-            student[0].DisplayStudent();
-            student[1].DisplayStudent();
+            s[0].DisplayStudent();
+            s[1].DisplayStudent();
 
             Console.ReadLine();
         }
     }
     struct Students
     {
-        
         public char Grade;
 
         public void AcceptDataStudent(int rollno, string sname, char grade)
@@ -52,29 +50,20 @@ namespace Aug26
             Console.WriteLine("StudentName : " + StudentName);
             Console.WriteLine("Grade : " + Grade);
             Console.WriteLine();
-
-            Console.WriteLine("----------------------");
         }
-
-
         int rollno;
-
         public int RollNo
         {
             get { return rollno; }
             set
-            {
-                if (value != 0)
+            { if (value != 0)
                 {
                     rollno = value;
-
                 }
                 else
                 {
-                    
-                    Console.WriteLine("RollNo couldnot be zero or null");
+                    Console.WriteLine("Roll Number cannot be zero or null");
                 }
-
             }
         }
         string sname;
@@ -86,7 +75,7 @@ namespace Aug26
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    Console.WriteLine("StudentNAme couldnot be null");
+                    Console.WriteLine("Student Name cannot be null");
                 }
                 else
                 {
