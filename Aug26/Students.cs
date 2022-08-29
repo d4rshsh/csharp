@@ -18,14 +18,11 @@ namespace ArrayObjLibrary
                 if (value != 0)
                 {
                     rollno = value;
-
                 }
                 else
                 {
-
-                    Console.WriteLine("RollNo couldnot be zero or null");
+                    Console.WriteLine("Roll Number cannot be zero or null");
                 }
-
             }
         }
         private string sname;
@@ -37,13 +34,12 @@ namespace ArrayObjLibrary
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    Console.WriteLine("StudentNAme couldnot be null");
+                    Console.WriteLine("Student Name cannot be null");
                 }
                 else
                 {
                     sname = value;
                 }
-
             }
         }
         private char grade;
@@ -63,8 +59,8 @@ namespace ArrayObjLibrary
         public void DisplayStudent()
         {
 
-            Console.WriteLine("RollNo : " + RollNo);
-            Console.WriteLine("StudentName : " + StudentName);
+            Console.WriteLine("Roll Number : " + RollNo);
+            Console.WriteLine("Student Name : " + StudentName);
             Console.WriteLine("Grade : " + Grade);
             Console.WriteLine();
 
