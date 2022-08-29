@@ -18,7 +18,7 @@ namespace ArrayObjLibrary
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    Console.WriteLine("ProductName cannot be null");
+                    Console.WriteLine("Product Name cannot be null");
                 }
                 else
                 {
@@ -30,7 +30,7 @@ namespace ArrayObjLibrary
 
         private int pid;
 
-        public int ProductID
+        public int Product_ID
         {
             get { return pid; }
             set
@@ -50,7 +50,7 @@ namespace ArrayObjLibrary
 
         private int price;
 
-        public int ProductPrice
+        public int Product_Price
         {
             get { return price; }
             set
@@ -63,7 +63,7 @@ namespace ArrayObjLibrary
                 else
                 {
 
-                    Console.WriteLine("ProductPrice cannot be zero or null");
+                    Console.WriteLine("Product Price cannot be zero or null");
                 }
             }
         }
@@ -76,9 +76,9 @@ namespace ArrayObjLibrary
         }
         public void DisplayDetails()
         {
-            Console.WriteLine("ProductID : " + ProductID);
-            Console.WriteLine("ProductName : " + ProductName);
-            Console.WriteLine("ProductPrice : " + ProductPrice);
+            Console.WriteLine("ProductID : " + Product_ID);
+            Console.WriteLine("ProductName : " + Product_Name);
+            Console.WriteLine("ProductPrice : " + Product_Price);
             Console.WriteLine("-----------------------------");
 
         }
