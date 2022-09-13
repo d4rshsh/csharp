@@ -1,0 +1,8 @@
+C:\Users\sures\source\repos\Sept12\Sept12\bin\Debug\Sept12.exe.config
+C:\Users\sures\source\repos\Sept12\Sept12\bin\Debug\Sept12.exe
+C:\Users\sures\source\repos\Sept12\Sept12\bin\Debug\Sept12.pdb
+C:\Users\sures\source\repos\Sept12\Sept12\obj\Debug\Sept12.csproj.AssemblyReference.cache
+C:\Users\sures\source\repos\Sept12\Sept12\obj\Debug\Sept12.csproj.SuggestedBindingRedirects.cache
+C:\Users\sures\source\repos\Sept12\Sept12\obj\Debug\Sept12.csproj.CoreCompileInputs.cache
+C:\Users\sures\source\repos\Sept12\Sept12\obj\Debug\Sept12.exe
+C:\Users\sures\source\repos\Sept12\Sept12\obj\Debug\Sept12.pdb
