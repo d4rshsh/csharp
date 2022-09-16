@@ -1,0 +1,6 @@
+C:\Users\sures\source\repos\Sept13\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\sures\source\repos\Sept13\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\sures\source\repos\Sept13\ClassLibrary1\obj\Debug\Sept13Class.csproj.AssemblyReference.cache
+C:\Users\sures\source\repos\Sept13\ClassLibrary1\obj\Debug\Sept13Class.csproj.CoreCompileInputs.cache
+C:\Users\sures\source\repos\Sept13\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\sures\source\repos\Sept13\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
