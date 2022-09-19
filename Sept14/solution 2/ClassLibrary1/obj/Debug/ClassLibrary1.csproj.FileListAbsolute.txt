@@ -1,0 +1,17 @@
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.AssemblyReference.cache
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\Eco.Handles.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\Eco.Interfaces.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\Eco.LinqExtender.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\MDriven.Net.Http.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\Nancy.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\System.Buffers.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\bin\Debug\Nancy.xml
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CopyComplete
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\sures\source\repos\Sept14\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
