@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93D53861-2D40-4E44-8E28-5923F85E29B7}</ProjectGuid>
+    <ProjectGuid>{01E9C398-35E6-4C14-AB83-3CFCF972DE8A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Sept13</RootNamespace>
     <AssemblyName>Sept13</AssemblyName>
@@ -50,12 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="questions.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Sept13Class.csproj">
-      <Project>{D9FBD582-F8F4-49DA-BB10-041CA652DC99}</Project>
-      <Name>Sept13Class</Name>
+    <ProjectReference Include="..\ClassLibrary1\UserModule.csproj">
+      <Project>{E3628ABA-FE50-4D22-8EED-7A09CEB49F02}</Project>
+      <Name>UserModule</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

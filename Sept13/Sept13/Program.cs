@@ -1,187 +1,218 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Movies;
-using System.IO;
-using AdminModule;
-// using System.Web.Script.Serialization;
-using System.Xml.Serialization;
-using System.Runtime.CompilerServices;
+using UserModule;
 
-namespace MovieApps
+namespace Sept13
 {
-    internal class Program
+    public class Program
     {
+
         static void Main(string[] args)
         {
-            Admin darsh = new Admin();
-             File.Create("C:\\Users\\sures\\source\\repos\\User.txt");
-            File.Create("C:\\Users\\sures\\source\\repos\\MoviesList.txt");
-            Movie m1 = new Movie();
-            m1.AddMovieDetails("SK", "Tamil", "Action", 50);
-            Movie m2 = new Movie();
-            m2.AddMovieDetails("KRK", "Tamil", "Romance", 60);
-            Movie m3 = new Movie();
-            m3.AddMovieDetails("DS", "English", "Mystery", 100);
-            Movie m4 = new Movie();
-            m4.AddMovieDetails("NEPV", "Tamil", "Romance", 60);
-            Movie m5 = new Movie();
-            m5.AddMovieDetails("SMS", "Tamil", "Comedy", 110);
-            Movie m6 = new Movie();
-            m6.AddMovieDetails("Don't Brethe", "English", "Thriller", 100);
-            Movie m7 = new Movie();
-            m7.AddMovieDetails("Deadpool", "English", "Action", 50);
-            Movie m8 = new Movie();
-            m8.AddMovieDetails("24", "Tamil", "Sci-fi", 120);
-            Movie m9 = new Movie();
-            m9.AddMovieDetails("MIB", "English", "Sci-fi", 120);
-            Movie m10 = new Movie();
-            m10.AddMovieDetails("West World", "English", "Sci-fi", 120);
-            Movie m11 = new Movie("SMS", "Tamil", "Comedy", 110);
-            Movie.Read();
-            foreach (var item in Movie.MoviesList)
-            {
-                Console.WriteLine($"Movie Name : {item.Movie_Name}");
-            }
-            Console.WriteLine("Enter 1.User 2.Admin");
-            int choice = Int32.Parse(Console.ReadLine());
-            User u = new User();
-            switch (choice)
+            List<Users> userslist = new List<Users>();
+            Users user1 = new Users() { User_name = "darsh", Passwd = "10142000", Phone_num = "7358952929", Date_Added = new DateTime(2022, 04, 10) };
+            Users user2 = new Users() { User_name = "sesh", Passwd = "03062002", Phone_num = "9626877510", Date_Added = new DateTime(2022, 04, 17) };
+            Users user3 = new Users() { User_name = "", Passwd = "23345", Phone_num = "1234567878", Date_Added = new DateTime(2022, 06, 13) };
+            Users user4 = new Users() { User_name = "Ashmi", Passwd = "230520", Phone_num = "8344425080", Date_Added = new DateTime(2022, 02, 10) };
+            
+            userslist.Add(user1);
+            userslist.Add(user2);
+            userslist.Add(user3);
+            userslist.Add(user4);
+
+            List<Movie> movielist = new List<Movie>();
+            Movie movie1 = new Movie() { Movie_Name = "Vikram", Lang = "Tamil", Genre = "Thriller", Movie_cost = 80 };
+            Movie movie2 = new Movie() { Movie_Name = "Sita Ramam", Lang = "Tamil", Genre = "Romance", Movie_cost = 60 };
+            Movie movie3 = new Movie() { Movie_Name = "KGF2", Lang = "Telugu", Genre = "Action", Movie_cost = 60 };
+            Movie movie4 = new Movie() { Movie_Name = "Asuran", Lang = "Tamil", Genre = "Drama", Movie_cost = 70 };
+            Movie movie5 = new Movie() { Movie_Name = "Cobra", Lang = "Tamil", Genre = "Sci-fi", Movie_cost = 50 };
+            Movie movie6 = new Movie() { Movie_Name = "Ae Dil Hai Mushkil", Lang = "Hindi", Genre = "Romance", Movie_cost = 100 };
+            Movie movie7 = new Movie() { Movie_Name = "Maara", Lang = "Tamil", Genre = "Documentary", Movie_cost = 160 };
+            Movie movie8 = new Movie() { Movie_Name = "Jai Bhim", Lang = "Tamil", Genre = "Drama", Movie_cost = 30 };
+            Movie movie9 = new Movie() { Movie_Name = "Psycho", Lang = "Tamil", Genre = "Thriller", Movie_cost = 40 };
+            Movie movie10 = new Movie() { Movie_Name = "Pride and Prejudice", Lang = "English", Genre = "Fantasy", Movie_cost = 80 };
+            Movie movie11 = new Movie() { Movie_Name = "Kathuvaakula Rendu Kaadhal", Lang = "Tamil", Genre = "Romance", Movie_cost = 65 };
+
+            movielist.Add(movie1);
+            movielist.Add(movie2);
+            movielist.Add(movie3);
+            movielist.Add(movie4);
+            movielist.Add(movie5);
+            movielist.Add(movie6);
+            movielist.Add(movie7);
+            movielist.Add(movie8);
+            movielist.Add(movie9);
+            movielist.Add(movie10);
+            movielist.Add(movie11);
+          
+            Movie.Stock = movielist.Count();
+            Console.WriteLine("1.User Module 2.Admin Module 3.Common Options");
+            int option = int.Parse(Console.ReadLine());
+            switch (option)
             {
                 case 1:
-                    Console.WriteLine("Enter Name : ");
-                    string Name = Console.ReadLine();
-                    Console.WriteLine("Enrter User Id : ");
-                    long MobileNo = long.Parse(Console.ReadLine());
-                    Console.WriteLine("Enter Password : ");
-                    string Password = Console.ReadLine();
-                    Console.WriteLine("Enter UserLevel (Silver , Gold , Platinum) : ");
-                    string level = Console.ReadLine();
-                    u.AddUser(Name, MobileNo, Password, level);
-                    bool condition;
-                    do
                     {
-
-
-                        Console.WriteLine("Enter 1.Borrow Movie 2.Return Movie 3.Show My List 4.Search Movie By Lang");
-                        int ch = Int32.Parse(Console.ReadLine());
-                        switch (ch)
+                        Console.WriteLine("Enter User_name and Passwd");
+                        Action<string, string> Login = (string username, string password) =>
                         {
-                            case 1:
-                                // Movie m = new Movie("ANAND","TAMIL" , "Action" ,20);
-                                Console.WriteLine("Enter Movie Name : ");
-                                string movieName = Console.ReadLine();
-                                try
+                            Users Name = userslist.Find(x => x.User_name == username);
+                            Users Pass = userslist.Find(x => Name.Passwd == password);
+                            if (Name != null)
+                            {
+                                if (Pass != null)
                                 {
-                                    //foreach (var item in Movie.MoviesList)
-                                    //{
-                                    //    if(item.Movie_Name == movieName)
-                                    //    {
-                                    //        u.BorrowMovie(item);
-                                    //    }
-                                    //}
-                                    var found = Movie.MoviesList.Find((movie) => movie.Movie_Name == movieName);
-                                    if (found != null)
+                                    Console.WriteLine("Logged In " + Name.User_name + "!!");
+                                    Console.WriteLine("The Top Rated Movies Rented By others are :");
+                                    foreach (Movie Movies in movielist)
                                     {
-                                        u.BorrowMovie(found);
+                                        Console.ForegroundColor = ConsoleColor.Magenta;
+                                        Console.WriteLine(Movies.Movie_Name);
+                                        Console.WriteLine(Movies.Lang);
+                                        Console.WriteLine(Movies.Genre);
+                                        Console.WriteLine("______________________");
                                     }
-                                    else
+                                    char c = 'Y';
+                                    while (c == 'Y')
                                     {
-                                        throw new Exception("Movie Not Found");
+                                        Console.WriteLine("Select 1 to search Movies \n select 2 to rent movies");
+                                        int sel = int.Parse(Console.ReadLine());
+                                        switch (sel)
+                                        {
+                                            case 1:
+                                                user1.SearchByLangOrGenre(movielist);
+                                                break;
+                                            case 2:
+                                                user2.Renting(movielist, Pass);
+                                                break;
+                                            default:
+                                                Environment.Exit(1);
+                                                break;
+                                        }
+                                        Console.WriteLine("Do you want to continue (Y/N)");
+                                        char ch = Convert.ToChar(Console.ReadLine());
+                                        if (ch == 'Y' || ch == 'y')
+                                        {
+                                            c = 'Y';
+                                        }
+                                        else
+                                        {
+                                            break;
+                                        }
                                     }
 
-                                    foreach (var item in u.BorrowedMovies)
-                                    {
-                                        Console.WriteLine($"Name : {item.Movie_Name}");
-                                    }
-                                }
-                                catch (Exception ex)
-                                {
-                                    Console.WriteLine("Error Message from borrowing" + ex.Message);
 
                                 }
-                                break;
-                            case 2:
-                                Console.WriteLine("Enter Movie Name You Want to return : ");
-                                string Rmovie = Console.ReadLine();
-                                Console.WriteLine("Enter Due days : ");
-                                int days = Int32.Parse(Console.ReadLine());
-                                try
+                                else
                                 {
-                                    var found = Movie.MoviesList.Find((movie) => movie.Movie_Name == Rmovie);
-                                    if (found != null)
-                                    {
-                                        u.ReturnMovie(found, days);
-                                    }
-                                    else
-                                    {
-                                        throw new Exception("Movie Not Found");
-                                    }
+                                    Console.WriteLine("Passwd is incorrect");
                                 }
-                                catch (Exception ex)
-                                {
-                                    Console.WriteLine(ex.Message);
+                            }
+                            else
+                            {
+                                Console.WriteLine("No user found");
+                            }
 
-                                }
-                                break;
-                            case 3:
-                                u.ShowMyList();
-                                break;
-                            case 4:
-                                Console.WriteLine("Enter Movie Lang");
-                                string lang = Console.ReadLine();
-                                u.SearchByLang(lang);
-                                break;
-                            default:
-                                break;
-                        }
-                        Console.WriteLine("Do you want to Continue (yes/no) : ");
-                        string ans = Console.ReadLine();
-                        if (ans == "yes" || ans == "YES")
-                        {
-                            condition = true;
-                        }
-                        else
-                        {
-                            condition = false;
-                        }
-                    } while (condition);
-                    break;
+                        };
+                        Login(Console.ReadLine(), Console.ReadLine()); ;
+                        break;
+                    }
                 case 2:
-                    Console.WriteLine("Enter Password : ");
-                    string s = Console.ReadLine();
-                    if (s == "password")
                     {
-                        Console.WriteLine("Enter 1.AddUser 2.Add Movies");
-                        int ans = Int32.Parse(Console.ReadLine());
-                        switch (ans)
+                        Console.WriteLine("Enter Admin Operation to perform");
+                        Console.WriteLine("1.Users Modification 2.Movie Modifications");
+                        int Opt = int.Parse(Console.ReadLine());
+                        Admin admin = new Admin();
+                        switch (Opt)
                         {
                             case 1:
-                                darsh.AddUserByAdmin();
-                                break;
+                                {
+                                    Console.WriteLine("Enter 1 for Add User \n 2 for Update User \n 3 for delete User");
+                                    int n = int.Parse(Console.ReadLine());
+                                    if (n == 1)
+                                    {
+                                        admin.AddUsers(userslist);
+                                    }
+                                    else if (n == 2)
+                                    {
+                                        admin.UpdateUsers(userslist);
+                                    }
+                                    else if (n == 3)
+                                    {
+                                        admin.DeleteUsers(userslist);
+                                    }
+                                    break;
+                                }
                             case 2:
-                                darsh.WriteMovies();
-                                break;
-                            default:
-                                break;
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Wrong Password");
-                    }
-                    break;
-                default:
-                    break;
-            }
-            
-            FileStream fs1 = new FileStream("SearchedMovies.xml", FileMode.OpenOrCreate, FileAccess.Write);
-            XmlSerializer xml = new XmlSerializer(typeof(User));
+                                {
+                                    Console.WriteLine("Enter 1 for Add Movie \n 2 for Update Movie \n 3 for delete Movie");
+                                    int n = int.Parse(Console.ReadLine());
+                                    if (n == 1)
+                                    {
+                                        admin.AddMovies(movielist);
+                                    }
+                                    else if (n == 2)
+                                    {
+                                        admin.UpdateMovies(movielist);
+                                    }
+                                    else if (n == 3)
+                                    {
+                                        admin.DeleteMovies(movielist);
+                                    }
+                                    break;
+                                }
 
-            xml.Serialize(fs1, u);
-        
+                        }
+                        break;
+
+                    }
+                case 3:
+                    {
+                        Console.WriteLine("Enter the action to perform");
+                        Console.WriteLine("Enter\n 1 for Change Passwd \n 2 User option to change and view profile");
+                        Option commonopt = new Option();
+                        int n = int.Parse(Console.ReadLine());
+                        if (n == 1)
+                        {
+                            Console.WriteLine("Enter User_name");
+                            string name = Console.ReadLine();
+                            Users sel1 = userslist.Find(x => x.User_name == name);
+
+                            if (sel1 != null)
+                            {
+
+                                commonopt.changePassword(userslist, sel1);
+
+                            }
+
+
+
+
+                        }
+                        else if (n == 2)
+                        {
+                            commonopt.userpro(userslist);
+
+
+                        }
+                        break;
+                    }
+
+            }
+
+
+
+
+
+
+
+
+            Console.ReadLine();
         }
     }
+
+
 }

@@ -1,11 +1,11 @@
-C:\Users\sures\source\repos\Sept13\Sept13\obj\Debug\Sept13.csproj.AssemblyReference.cache
-C:\Users\sures\source\repos\Sept13\Sept13\obj\Debug\Sept13.csproj.SuggestedBindingRedirects.cache
-C:\Users\sures\source\repos\Sept13\Sept13\obj\Debug\Sept13.csproj.CoreCompileInputs.cache
 C:\Users\sures\source\repos\Sept13\Sept13\bin\Debug\Sept13.exe.config
 C:\Users\sures\source\repos\Sept13\Sept13\bin\Debug\Sept13.exe
 C:\Users\sures\source\repos\Sept13\Sept13\bin\Debug\Sept13.pdb
 C:\Users\sures\source\repos\Sept13\Sept13\bin\Debug\ClassLibrary1.dll
 C:\Users\sures\source\repos\Sept13\Sept13\bin\Debug\ClassLibrary1.pdb
+C:\Users\sures\source\repos\Sept13\Sept13\obj\Debug\Sept13.csproj.AssemblyReference.cache
+C:\Users\sures\source\repos\Sept13\Sept13\obj\Debug\Sept13.csproj.SuggestedBindingRedirects.cache
+C:\Users\sures\source\repos\Sept13\Sept13\obj\Debug\Sept13.csproj.CoreCompileInputs.cache
 C:\Users\sures\source\repos\Sept13\Sept13\obj\Debug\Sept13.csproj.CopyComplete
 C:\Users\sures\source\repos\Sept13\Sept13\obj\Debug\Sept13.exe
 C:\Users\sures\source\repos\Sept13\Sept13\obj\Debug\Sept13.pdb
