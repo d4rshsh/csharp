@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="libraryModelStoreContainer" CdmEntityContainer="libraryEntities">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="libraryModel.Book">
+        <MappingFragment StoreEntitySet="Book">
+          <ScalarProperty Name="Book_No" ColumnName="Book_No" />
+          <ScalarProperty Name="Book_Name" ColumnName="Book_Name" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Book_C">
+      <EntityTypeMapping TypeName="libraryModel.Book_C">
+        <MappingFragment StoreEntitySet="Book_C">
+          <ScalarProperty Name="Book_No" ColumnName="Book_No" />
+          <ScalarProperty Name="Book_Name" ColumnName="Book_Name" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Issue_C">
+      <EntityTypeMapping TypeName="libraryModel.Issue_C">
+        <MappingFragment StoreEntitySet="Issue_C">
+          <ScalarProperty Name="Lib_Issue_Id" ColumnName="Lib_Issue_Id" />
+          <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
+          <ScalarProperty Name="Book_No" ColumnName="Book_No" />
+          <ScalarProperty Name="Issue_Date" ColumnName="Issue_Date" />
+          <ScalarProperty Name="Return_Date" ColumnName="Return_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="libraryModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Member_Name" ColumnName="Member_Name" />
+          <ScalarProperty Name="Acc_Open_Date" ColumnName="Acc_Open_Date" />
+          <ScalarProperty Name="Max_Book_sAllowed" ColumnName="Max_Book_sAllowed" />
+          <ScalarProperty Name="Penalty_Amount" ColumnName="Penalty_Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Member_C">
+      <EntityTypeMapping TypeName="libraryModel.Member_C">
+        <MappingFragment StoreEntitySet="Member_C">
+          <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
+          <ScalarProperty Name="Account_Open_Date" ColumnName="Account_Open_Date" />
+          <ScalarProperty Name="Max_Allowed_Books" ColumnName="Max_Allowed_Books" />
+          <ScalarProperty Name="Penalty_Amount" ColumnName="Penalty_Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

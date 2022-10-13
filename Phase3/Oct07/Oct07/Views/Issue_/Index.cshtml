@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Oct07.Models.Issue_C>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Issue_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Return_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Book_C.Book_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Member_C.Member_Id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Issue_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Return_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Book_C.Book_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member_C.Member_Id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Lib_Issue_Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Lib_Issue_Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Lib_Issue_Id })
+        </td>
+    </tr>
+}
+
+</table>

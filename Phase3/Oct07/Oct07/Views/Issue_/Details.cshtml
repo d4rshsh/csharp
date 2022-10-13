@@ -1,0 +1,50 @@
+﻿@model Oct07.Models.Issue_C
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Issue_C</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Issue_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Issue_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Return_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Return_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Book_C.Book_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Book_C.Book_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member_C.Member_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member_C.Member_Id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Lib_Issue_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

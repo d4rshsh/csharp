@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="libraryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Book_No" />
+    </Key>
+    <Property Name="Book_No" Type="numeric" Precision="6" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="varchar" MaxLength="30" />
+    <Property Name="Author" Type="char" MaxLength="30" />
+    <Property Name="Cost" Type="numeric" Precision="7" Scale="2" />
+    <Property Name="Category" Type="char" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Book_C">
+    <Key>
+      <PropertyRef Name="Book_No" />
+    </Key>
+    <Property Name="Book_No" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Book_Name" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Category" Type="varchar" MaxLength="30" />
+    <Property Name="Price" Type="numeric" Precision="5" Scale="2" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'library.dbo.Issue' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Issue">
+          <Property Name="Lib_Issue_Id" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="Book_No" Type="numeric" Precision="6" Scale="0" />
+          <Property Name="MemberId" Type="numeric" Precision="5" Scale="0" />
+          <Property Name="Issue_Date" Type="date" />
+          <Property Name="Return_Date" Type="date" />
+        </EntityType>-->
+  <EntityType Name="Issue_C">
+    <Key>
+      <PropertyRef Name="Lib_Issue_Id" />
+    </Key>
+    <Property Name="Lib_Issue_Id" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Member_Id" Type="int" />
+    <Property Name="Book_No" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Issue_Date" Type="datetime" />
+    <Property Name="Return_Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="MemberId" />
+    </Key>
+    <Property Name="MemberId" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="Member_Name" Type="char" MaxLength="20" />
+    <Property Name="Acc_Open_Date" Type="date" />
+    <Property Name="Max_Book_sAllowed" Type="numeric" Precision="2" Scale="0" />
+    <Property Name="Penalty_Amount" Type="numeric" Precision="7" Scale="2" />
+  </EntityType>
+  <EntityType Name="Member_C">
+    <Key>
+      <PropertyRef Name="Member_Id" />
+    </Key>
+    <Property Name="Member_Id" Type="int" Nullable="false" />
+    <Property Name="Account_Open_Date" Type="datetime" />
+    <Property Name="Max_Allowed_Books" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Penalty_Amount" Type="money" />
+  </EntityType>
+  <Association Name="add_pk_fk">
+    <End Role="Member_C" Type="Self.Member_C" Multiplicity="0..1" />
+    <End Role="Issue_C" Type="Self.Issue_C" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Member_C">
+        <PropertyRef Name="Member_Id" />
+      </Principal>
+      <Dependent Role="Issue_C">
+        <PropertyRef Name="Member_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="add_pk_fk_book">
+    <End Role="Book_C" Type="Self.Book_C" Multiplicity="0..1" />
+    <End Role="Issue_C" Type="Self.Issue_C" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book_C">
+        <PropertyRef Name="Book_No" />
+      </Principal>
+      <Dependent Role="Issue_C">
+        <PropertyRef Name="Book_No" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="libraryModelStoreContainer">
+    <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Book_C" EntityType="Self.Book_C" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Issue_C" EntityType="Self.Issue_C" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member" EntityType="Self.Member" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member_C" EntityType="Self.Member_C" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="add_pk_fk" Association="Self.add_pk_fk">
+      <End Role="Member_C" EntitySet="Member_C" />
+      <End Role="Issue_C" EntitySet="Issue_C" />
+    </AssociationSet>
+    <AssociationSet Name="add_pk_fk_book" Association="Self.add_pk_fk_book">
+      <End Role="Book_C" EntitySet="Book_C" />
+      <End Role="Issue_C" EntitySet="Issue_C" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

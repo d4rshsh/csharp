@@ -1,0 +1,13 @@
+1) Create layout for the Library using the images and Menus required and footer.
+2) Create a partial view to Show the time.
+3) Create CRUD operations on Members,Books,Issue table.
+
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: red;
+    background: linear-gradient(to left top, blue,red);
+    background: radial-gradient(circle,red,green,blue);
+    /* background-image:url('../Images/books.jpg')*/
+    }
