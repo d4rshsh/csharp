@@ -1,0 +1,24 @@
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.dll
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.pdb
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.AssemblyReference.cache
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.CoreCompileInputs.cache
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.dll
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.pdb
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.dll.config
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.dll
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.SqlServer.dll
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.xml
+E:\Repos\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.SqlServer.xml
+E:\Repos\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.CopyComplete
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.dll.config
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.dll
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\bin\Debug\DAL_BankLib.pdb
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.dll
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.xml
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.AssemblyReference.cache
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.CoreCompileInputs.cache
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.csproj.CopyComplete
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.dll
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\DAL_BankLib\obj\Debug\DAL_BankLib.pdb

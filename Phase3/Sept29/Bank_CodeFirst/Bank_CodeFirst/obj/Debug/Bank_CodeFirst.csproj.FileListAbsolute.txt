@@ -1,0 +1,32 @@
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\Bank_CodeFirst.exe.config
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\Bank_CodeFirst.exe
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\Bank_CodeFirst.pdb
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.csproj.AssemblyReference.cache
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.csproj.SuggestedBindingRedirects.cache
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.csproj.CoreCompileInputs.cache
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.exe
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.pdb
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\DAL_BankLib.dll
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\EntityFramework.dll
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\DAL_BankLib.pdb
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\DAL_BankLib.dll.config
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\EntityFramework.xml
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+E:\Repos\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.csproj.CopyComplete
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\Bank_CodeFirst.exe.config
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\Bank_CodeFirst.exe
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\Bank_CodeFirst.pdb
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\DAL_BankLib.dll
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\EntityFramework.dll
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\DAL_BankLib.pdb
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\DAL_BankLib.dll.config
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\EntityFramework.xml
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.csproj.AssemblyReference.cache
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.csproj.SuggestedBindingRedirects.cache
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.csproj.CoreCompileInputs.cache
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.csproj.CopyComplete
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.exe
+C:\MPHASIS LEARNING ACADEMY\GitHub\Sept29\Bank_CodeFirst\Bank_CodeFirst\obj\Debug\Bank_CodeFirst.pdb
